@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+<style>
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+    
+    
+    
+    
+.container {
+    border-radius: 5px;
+     margin-left: 200px;
+    
+  padding: 1px 16px;
+    
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    
+.header {
+ 
+    padding: 25px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+    /* Increase the font size of the h1 element */
+.header h1 {
+    font-size: 30px;
+}   
+ 
+ .sidenav {
+ margin: 0px;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  z-index: 1;
+  position: fixed;
+  height: 100%;
+  overflow-x: hidden;
+    padding-top: 20px;
+    /*height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 165px;
+    left: 0;
+    background: #eee;
+    overflow-x: hidden;
+    padding-top: 20px;*/
+}
+
+.sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    padding: 16px;
+    text-decoration: none;
+   font-size: 20px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+background-color: #555;
+    color: #064579;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-height: 450px) {
+  .sideNav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sideNav a {float: left;}
+  .container{margin-left: 0px;}
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}   
+    
+    
+    
+
+</style>
+</head>
+<body id="registration">
+ 
+    
+<div class="header">
+  <h1>Workshop on Modelling Economic and Financial Time Series</h1>
+  <p> Carlos III University of Madrid</p>
+  
+</div>
+
+<div class="sidenav">
+  <a  href="index.html">Home</a>
+  <a href="programme.html">Programme</a>
+  <a href="contact.html">How to find us</a>
+  <a href="registration.html">Registration</a>
+    <a href="submission.html">Abstract Submission</a>  
+</div>  
+ <div class="container">     
+<div style="text-align:center">
+<h2>Registration Form</h2>
+  </div>
+ </div>
+      
+<div class="container">  
+    
+  <form method="post"  action="action_page.php">
+      
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="university">University</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="university" name="university" placeholder="Your university..">
+      </div>
+    </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="email">Email Address</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email address" placeholder="Your email address..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="position">Position</label>
+      </div>
+      <div class="col-25">
+        <select id="position" name="position">
+          <option value="Professor">Professor</option>
+          <option value="Associate Professor">Associate Professor</option>
+          <option value="Assistant Professor">Assistant Professor</option>
+          <option value="Post-Doctor">Post-Doctor</option>
+          <option value="Ph.D student">Ph.D student</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+        
+    </div>
+      
+      
+  </form>
+</div>
+ 
+       
+</body>
+</html>
