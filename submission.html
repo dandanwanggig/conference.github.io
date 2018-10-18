@@ -1,15 +1,26 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Page Title</title>
-    
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
     box-sizing: border-box;
 }
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
 
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /* Style the header */
 .header {
@@ -26,15 +37,15 @@
 }
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body {
+.body {
   margin: 0;
   font-family: "Lato", sans-serif;
 }
 
 
 .sidenav {
- margin: 0;
-  padding: 10px;
+ margin: 0px;
+  padding: 0;
   width: 200px;
   background-color: #f1f1f1;
   z-index: 1;
@@ -53,7 +64,6 @@ body {
     padding-top: 20px;*/
 }
 
-    
 .sidenav a {
     /*padding: 6px 6px 6px 32px;*/
     padding: 16px;
@@ -69,7 +79,7 @@ background-color: #555;
 }
 .container {
      margin-left: 200px;
-   
+    
   padding: 1px 16px;
   /* Same as the width of the sidenav */
 }
@@ -98,6 +108,9 @@ background-color: #555;
     
 </style>
 </head>
+    
+    
+    
 <body id="submission">
     
     
