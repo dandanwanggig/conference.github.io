@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+ 
+    padding: 25px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+    font-size: 30px;
+}
+
+.body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+
+.sidenav {
+ margin: 0px;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  z-index: 1;
+  position: fixed;
+  height: 100%;
+  overflow-x: hidden;
+    padding-top: 20px;
+    /*height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 165px;
+    left: 0;
+    background: #eee;
+    overflow-x: hidden;
+    padding-top: 20px;*/
+}
+
+.sidenav a {
+    /*padding: 6px 6px 6px 32px;*/
+    padding: 16px;
+    text-decoration: none;
+   font-size: 20px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+background-color: #555;
+    color: #064579;
+}
+.container {
+     margin-left: 200px;
+    
+  padding: 1px 16px;
+  /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sideNav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sideNav a {float: left;}
+  .container{margin-left: 0px;}
+}
+
+    /*#contact-form { max-width:500px;margin:0 auto;padding:30px;background:rgba(219,219,219,1.00); }*/
+.error { color:rgba(152,25,27,1.00); }
+.success { color:rgba(22,135,4,1.00); }
+
+.topBar { background:rgba(63,63,63,1.00); color:#fff;padding:5px 0; }
+.topBar a { color:#fff; text-decoration:none; }
+    
+  /* Ad Placement Style */
+.leftSideAd { position:absolute; top:100px; left:0px; }
+.rightSideAd { position:absolute; top:100px; right:0px; }
+  
+    
+</style>
+</head>
+    
+    
+    
+<body id="submission">
+    
+    
+  
+    
+    
+<div class="header">
+  <h1>Workshop on Modelling Economic and Financial Time Series</h1>
+  <p> Universidad Carlos III de Madrid </p>
+  
+</div>
+
+<div class="sidenav">
+  <a  href="index.html">Home</a>
+  <a href="programme.html">Programme</a>
+  <a href="contact.html">How to find us</a>
+  <a href="registration.html">Registration</a>
+    <a href="submission.html">Abstract Submission</a>  
+</div>
+
+<div class="container">
+  <h2>Guidelines for submitting an abstract</h2>
+  <ul style="list-style-type:square">
+     
+     <p> <li>The maximum word limit for the abstract is 250 words.</li></p>
+      <p><li>Your submission should be submitted in English.</li></p>
+      <p><li>We encourage you to send informative abstract (complete abstract) which is a compendious summary of a paper’s substance including its background, purpose, methodology, results, and conclusion</li></p>
+      <p><li>Submit your abstract through upload</li></p>
+      <p><li>After submission you will be acknowledged of the acception of the abstract via an email.</li></p>
+  
+  
+      
+        
+</ul>
+
+
+
+
+
+
+
+<div class="row">
+<div class="col-md-12 text-left">
+
+
+<form id="contact-form" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="fname">First Name:</label>
+    <input type="text" class="form-control" id="fname">
+  </div>
+  <div class="form-group">
+    <label for="email">Email Address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+  <label for="attachment">File attachment:</label>
+   <input type="file" name="file_attach" class="input-field" id="attachment"/>
+  </div>
+ 
+  <button type="button" id="submit" class="btn btn-default btn-dark">Submit</button>
+</form> 
+</div>
+</div>
+
+<div class="row text-center">
+<div class="col-md-12">
+<!--Response Will display here-->
+<div id="response"></div>
+</div>
+
+
+</div>
+
+
+
+
+<div class="leftSideAd">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Ajax Form Demo - Left -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-3727769271706551"
+     data-ad-slot="9054822359"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div class="rightSideAd">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Ajax Form Demo - Right -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-3727769271706551"
+     data-ad-slot="8288535593"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+           
+           $("#submit").click(function(e) {
+               
+               alert('hello');
+               var proceed = true;
+
+               if(proceed) //everything looks good! proceed...
+        {
+
+           //data to be sent to server        
+            var m_data = new FormData();   
+            m_data.append( 'first_name', $('#fname').val());
+            m_data.append( 'email_address', $('#email_address').val());
+            m_data.append( 'file_attach', $('input[name=file_attach]')[0].files[0]);
+              
+            //instead of $.post() we are using $.ajax()
+            //that's because $.ajax() has more options and flexibly.
+
+            $.ajax({
+              url: 'sendemail.php',
+              data: m_data,
+              processData: false,
+              contentType: false,
+              type: 'POST',
+              dataType:'json',
+              success: function(response){
+                 //load json data from server and output message    
+                if(response.type == 'error'){ //load json data from server and output message    
+                    output = '<div class="error">'+response.text+'</div>';
+                }else{
+                    output = '<div class="success">'+response.text+'</div>';
+                }
+                $("#response").hide().html(output).slideDown();
+              }
+            });
+             
+ 
+        }
+
+           });
+  });
+
+</script>
+
+    
+    </div>
+     
+</body>
+</html> 
